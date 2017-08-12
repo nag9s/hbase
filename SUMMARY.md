@@ -7,5 +7,7 @@
     * [Regions](hbase-architecture/region-servers/regions.md)
   * [HBase HMaster](hbase-architecture/hbase-hmaster.md)
   * [ZooKeeper: The Coordinator](hbase-architecture/zookeeper-the-coordinator.md)
+  * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
+  * Fault Tolerance
 * [Queries](queries.md)
 
