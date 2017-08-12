@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
+* [Concepts](concepts.md)
 * [Hbase Architecture](hbase-architecture.md)
   * [Region servers](hbase-architecture/region-servers.md)
     * [Regions](hbase-architecture/region-servers/regions.md)
