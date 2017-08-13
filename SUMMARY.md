@@ -13,7 +13,7 @@
     * [Store\(HStore OR Memstore\)\)](hbase-architecture/region-servers/storehstore-or-memstore.md)
     * [HBase Region Flush](hbase-architecture/region-servers/hbase-region-flush.md)
   * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
-  * [Fault Tolerance](hbase-architecture/fault-tolerance.md)
+  * [Fault Tolerance\( Failover\)](hbase-architecture/fault-tolerance.md)
   * [Data Locality](hbase-architecture/data-locality.md)
   * [ZooKeeper: The Coordinator](hbase-architecture/zookeeper-the-coordinator.md)
   * [HBase HMaster](hbase-architecture/hbase-hmaster.md)

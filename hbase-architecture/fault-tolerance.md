@@ -16,13 +16,15 @@ To be resilient to node failures, all StoreFiles are written into HDFS, which re
 
 ![](/assets/RegionServerFailure.png)
 
+**DataNode Failover**
+
+ - These are handled by HDFS replication \(out of the box as part of Hadoop deployment\)
+
 ### Data Recovery
 
 WAL files contain a list of edits, with one edit representing a single put or delete. Edits are written chronologically, so, for persistence, additions are appended to the end of the WAL file that is stored on disk.
 
 What happens if there is a failure when the data is still in memory and not persisted to an HFile? The WAL is replayed. Replaying a WAL is done by reading the WAL, adding and sorting the contained edits to the current MemStore. At the end, the MemStore is flush to write changes to an HFile.
-
-
 
 ![](/assets/dataRecovery.png)
 
