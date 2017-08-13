@@ -1,8 +1,12 @@
+### HMaster Failures
+
 One may think that the Master is a SPOF \(single point of failure\). Actually, we can set up multiple HMasters although only one is active .
 
 * HMasters use heartbeats to monitor each other.
 * If the active Master shuts down or loses its lease in ZooKeeper, the remaining Masters jostle to take over the Master role.
 * Because the clients talk directly to the RegionServers, the HBase cluster can still function in a steady state in short period during the Master failover. Note that Accumulo doesn’t support multiple Masters currently and thus the Master is a SPOF.
+
+### RegionServers Failures
 
 **So how about RegionServers**? It looks like that we are safe since there are multiple instances. **However, recall that a region is managed by a single RegionServer at a time. If a RegionServer fails, the corresponding regions are not available until the detection and recovery steps have happened. It is actually a SPOF although there are no global failures in HBase**.
 
