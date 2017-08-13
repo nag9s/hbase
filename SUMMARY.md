@@ -5,7 +5,7 @@
 * [Hbase Architecture](hbase-architecture.md)
   * [Region servers](hbase-architecture/region-servers.md)
     * [Regions](hbase-architecture/region-servers/regions.md)
-    * HFile
+    * [HFile](hbase-architecture/region-servers/hfile.md)
     * [WAL\(HLog\)](hbase-architecture/region-servers/hlog.md)
     * [BlockCache](hbase-architecture/region-servers/blockcache.md)
     * [Store\(HStore OR Memstore\)\)](hbase-architecture/region-servers/storehstore-or-memstore.md)
