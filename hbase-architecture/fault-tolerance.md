@@ -16,9 +16,9 @@ To be resilient to node failures, all StoreFiles are written into HDFS, which re
 
 ![](/assets/RegionServerFailure.png)
 
-**DataNode Failover**
+### **DataNode Failover**
 
- - These are handled by HDFS replication \(out of the box as part of Hadoop deployment\)
+* These are handled by HDFS replication \(out of the box as part of Hadoop deployment\)
 
 ### Data Recovery
 
