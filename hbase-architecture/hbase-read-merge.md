@@ -4,9 +4,7 @@ the KeyValue cells corresponding to one row can be in multiple places, row cells
 2. Next, the scanner looks in the MemStore, the write cache in memory containing the most recent writes.
 3. If the scanner does not find all of the row cells in the MemStore and Block Cache, then HBase will use the Block Cache indexes and bloom filters to load HFiles into memory, which may contain the target row cells.
 
-
-
-
+![](/assets/HBase Read Merge 1.png)
 
 there may be many HFiles per MemStore, which means for a read, multiple files may have to be examined, which can affect the performance. This is called read amplification.
 
