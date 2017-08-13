@@ -18,9 +18,11 @@ key-value in the HFile is represented as a low-level byte array.
 
 ![](/images/HFileBlock.png)
 
-
-
 Data is stored in an HFile which contains sorted key/values. When the MemStore accumulates enough data, the entire sorted KeyValue set is written to a new HFile in HDFS. This is a sequential write. It is very fast, as it avoids moving the disk drive head.
+
+
+
+
 
 An HFile contains a multi-layered index which allows HBase to seek to the data without having to read the whole file. The multi-level index is like a b+tree:
 
