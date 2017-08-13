@@ -14,19 +14,15 @@ When the HMaster detects that a region server has crashed, the HMaster reassigns
 
 To be resilient to node failures, all StoreFiles are written into HDFS, which replicates the blocks of these files \(3 times by default\). Besides, HBase, just like any other durable databases, uses a write-ahead-log \(WAL\), which is also written into HDFS. To detect the silent death of RegionServers, HBase uses ZooKeeper. Each RegionServer is connected to ZooKeeper and the Master watches these connections. ZooKeeper itself employs heartbeats. On a timeout, the Master declares the RegionServer as dead and starts the recovery process. **During the recovery, the regions are reassigned to random RegionServers and each RegionServer reads the WAL to recover the correct region state. This is a complicated process and the mean time to recovery \(MTTR\) of HBase is often around 10 minutes if a DataNode crash with default settings. But we may reduce the MTTR to less than 2 minutes with **[careful settings.](http://hortonworks.com/blog/introduction-to-hbase-mean-time-to-recover-mttr/)
 
-
-
 ![](/assets/RegionServerFailure.png)
 
-
-
 ### Data Recovery
-
-
 
 WAL files contain a list of edits, with one edit representing a single put or delete. Edits are written chronologically, so, for persistence, additions are appended to the end of the WAL file that is stored on disk.
 
 What happens if there is a failure when the data is still in memory and not persisted to an HFile? The WAL is replayed. Replaying a WAL is done by reading the WAL, adding and sorting the contained edits to the current MemStore. At the end, the MemStore is flush to write changes to an HFile.
 
 
+
+![](/assets/dataRecovery.png)
 
