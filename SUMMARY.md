@@ -17,4 +17,5 @@
 * [Queries](queries.md)
 * [HBase Shell](hbase-shell.md)
   * [Guide Lines](hbase-shell/guide-lines.md)
+  * [overview-example](hbase-shell/overview-example.md)
 
