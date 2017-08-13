@@ -12,10 +12,8 @@ For future reads, the client uses the cache to retrieve the META location and pr
 
 As a general rule, if we need fast access to data, we should keep it ordered and as much of it as possible in memory.
 
-*  HBase accomplishes both of these goals, allowing it to serve millisecond reads in most cases. 
-  A read against HBase must be reconciled between the persisted HFiles and the data still in the MemStore. HBase has an LRU cache for reads. This cache, also called
-  BlockCache
-  , remains in the JVM heap along with MemStore.
+* HBase accomplishes both of these goals, allowing it to serve millisecond reads in most cases. 
+  A read against HBase must be reconciled between the persisted HFiles and the data still in the MemStore. HBase has an LRU cache for reads. This cache, also called BlockCache , remains in the JVM heap along with MemStore.
 * The BlockCache is designed to keep frequently accessed data from the HFiles in memory so as to avoid disk reads as much as possible. Each column family has its own BlockCache.
    Understanding the BlockCache is an important part of understanding how to run HBase at optimal performance. 
   The "Block" in BlockCache is the unit of data that HBase reads from disk in a single pass.
@@ -23,7 +21,7 @@ As a general rule, if we need fast access to data, we should keep it ordered and
 * The block is the smallest indexed unit of data and is the smallest unit of data that can be read from disk. The block size is configured per column family, and the default value is 64 KB. We may tweak this value as per our usecase.
    For random lookups a smaller block size will be recommended but smaller blocks creates a larger index and thereby consumes more memory. For more sequential scans, reading many blocks at a time, we should have larger block size. This allows us to save on memory because larger blocking this way we will have fewer index entries and thus a smaller index.
 * Reading a row from HBase requires first checking the MemStore for any pending modifications. Then the BlockCache is examined to see if the block containing this row has been recently accessed. Finally, the relevant HFiles on disk are accessed. There are more things going on under the hood, but this is the overall outline.
-* Note that HFiles contain a snapshot of the MemStore at the point when it was flushed. Data for a complete row can be stored across multiple HFiles. In order to read a complete row, HBase must read across all HFiles that might contain information for that row in order to compose the complete record. 
+* Note that HFiles contain a snapshot of the MemStore at the point when it was flushed. Data for a complete row can be stored across multiple HFiles. In order to read a complete row, HBase must read across all HFiles that might contain information for that row in order to compose the complete record. 
 
 
 
