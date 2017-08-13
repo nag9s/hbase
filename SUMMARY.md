@@ -15,6 +15,7 @@
   * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
   * [Fault Tolerance](hbase-architecture/fault-tolerance.md)
   * Data Locality
+  * Region Split
 * [Queries](queries.md)
 * [HBase Shell](hbase-shell.md)
   * [Guide Lines](hbase-shell/guide-lines.md)
