@@ -11,6 +11,7 @@
     * [BlockCache](hbase-architecture/region-servers/blockcache.md)
     * [Region Split](hbase-architecture/region-servers/region-split.md)
     * [Store\(HStore OR Memstore\)\)](hbase-architecture/region-servers/storehstore-or-memstore.md)
+    * [HBase Region Flush](hbase-architecture/region-servers/hbase-region-flush.md)
   * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
   * [Fault Tolerance](hbase-architecture/fault-tolerance.md)
   * [Data Locality](hbase-architecture/data-locality.md)
