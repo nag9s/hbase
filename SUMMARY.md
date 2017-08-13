@@ -27,4 +27,5 @@
   * [overview-example](hbase-shell/overview-example.md)
 * [HBase Read](hbase-read.md)
 * [HBase Write](hbase-write.md)
+* [Known Use Cases ](known-use-cases.md)
 
