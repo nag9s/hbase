@@ -8,7 +8,7 @@
     * HFile
     * [WAL\(HLog\)](hbase-architecture/region-servers/hlog.md)
     * BlockCache
-    * Store\(HStore OR Memstore\)\)
+    * [Store\(HStore OR Memstore\)\)](hbase-architecture/region-servers/storehstore-or-memstore.md)
   * [HBase HMaster](hbase-architecture/hbase-hmaster.md)
   * [ZooKeeper: The Coordinator](hbase-architecture/zookeeper-the-coordinator.md)
   * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
