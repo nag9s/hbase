@@ -8,7 +8,19 @@ HBase Data model has four dimensions whereas RDBMS has two dimensional model \( 
 
 ![](/assets/datamodel.png)
 
-
-
 ![](/assets/empDataModel.png)
+
+
+
+![](/assets/model.png)
+
+
+
+
+
+![](/assets/columnfamily.png)
+
+
+
+![](/assets/column.png)
 
