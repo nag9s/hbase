@@ -4,3 +4,7 @@ Note that this is one reason why there is a limit to the number of column famili
 
 The highest sequence number is stored as a meta field in each HFile, to reflect where persisting has ended and where to continue. On region startup, the sequence number is read, and the highest is used as the sequence number for new edits.
 
+
+
+![](/assets/HBase Region Flush.png)
+
