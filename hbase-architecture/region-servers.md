@@ -20,3 +20,7 @@ RegionServers host multiple Regions.
 
 
 
+![](/images/region_server_inernal.png)
+
+
+
