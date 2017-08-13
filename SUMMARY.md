@@ -6,7 +6,7 @@
   * [Region servers](hbase-architecture/region-servers.md)
     * [Regions](hbase-architecture/region-servers/regions.md)
     * HFile
-    * HLog
+    * [HLog](hbase-architecture/region-servers/hlog.md)
   * [HBase HMaster](hbase-architecture/hbase-hmaster.md)
   * [ZooKeeper: The Coordinator](hbase-architecture/zookeeper-the-coordinator.md)
   * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
