@@ -20,3 +20,16 @@ RegionServers host multiple Regions.
 
 ![](/images/region_server_inernal.png)
 
+
+
+A Region Server runs on an HDFS data node and has the following components:
+
+* WAL: Write Ahead Log is a file on the distributed file system. The WAL is used to store new data that hasn't yet been persisted to permanent storage; it is used for recovery in the case of failure.
+* BlockCache: is the read cache. It stores frequently read data in memory. Least Recently Used data is evicted when full.
+* MemStore: is the write cache. It stores new data which has not yet been written to disk. It is sorted before writing to disk. There is one MemStore per column family per region.
+* Hfiles store the rows as sorted KeyValues on disk.
+
+
+
+![](/assets/import.png)
+
