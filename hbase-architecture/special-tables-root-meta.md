@@ -13,8 +13,12 @@ Hbase In Action
 * The .META. table is like a b tree.
 * The .META. table structure is as follows:
 
-  - Key: region start key,region id
-  - Values: RegionServer
+  * Key: region start key,region id
+  * Values: RegionServer
+
+
+
+![](/assets/HBase Meta Table.png)
 
 
 
