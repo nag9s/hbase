@@ -17,6 +17,8 @@
   * [ZooKeeper: The Coordinator](hbase-architecture/zookeeper-the-coordinator.md)
   * [HBase HMaster](hbase-architecture/hbase-hmaster.md)
   * [Read Load Balancing](hbase-architecture/read-load-balancing.md)
+  * [HBase Minor Compaction](hbase-architecture/hbase-minor-compaction.md)
+  * [HBase Major Compaction](hbase-architecture/hbase-major-compaction.md)
 * [Queries](queries.md)
 * [HBase Shell](hbase-shell.md)
   * [Guide Lines](hbase-shell/guide-lines.md)
