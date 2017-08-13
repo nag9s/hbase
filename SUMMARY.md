@@ -13,5 +13,6 @@
   * [ZooKeeper: The Coordinator](hbase-architecture/zookeeper-the-coordinator.md)
   * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
   * [Fault Tolerance](hbase-architecture/fault-tolerance.md)
+  * Data Locality
 * [Queries](queries.md)
 
