@@ -6,3 +6,7 @@ records the offsets of the data and meta blocks. Each data block contains a magi
 
 header and a number of serialized KeyValue instances.
 
+
+
+![](/images/HFile.png)
+
