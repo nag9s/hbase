@@ -26,4 +26,5 @@
   * [Guide Lines](hbase-shell/guide-lines.md)
   * [overview-example](hbase-shell/overview-example.md)
 * HBase Read
+* [HBase Write](hbase-write.md)
 
