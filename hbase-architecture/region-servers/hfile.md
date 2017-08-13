@@ -22,7 +22,7 @@ Data is stored in an HFile which contains sorted key/values. When the MemStore a
 
 
 
-
+![](/assets/HBase HFile.png)
 
 An HFile contains a multi-layered index which allows HBase to seek to the data without having to read the whole file. The multi-level index is like a b+tree:
 
