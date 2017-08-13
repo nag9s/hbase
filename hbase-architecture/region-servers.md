@@ -8,7 +8,7 @@ RegionServers encapsulate the storage machinery in HBase. As you saw in the arch
 
 Every RegionServer **has two components shared across all contained Regions: the HLog and the BlockCache.** [**HLog**](/hbase-architecture/region-servers/hlog.md)**, also called the Write-ahead log, or WAL, is what provides HBase with data durability in the face of failure.** Every write to HBase is recorded in the HLog, written to HDFS.
 
-The **BlockCache is the portion of memory where HBase caches data read off of disk between reads.** It’s also a major source of operational headache for HBase when configured to be too large. If you hear about HBase GC configuration woes, they stem largely from this component. There is a single block cache per region server
+The **BlockCache is the portion of memory where HBase caches data read off of disk between reads.** It’s also a major source of operational headache for HBase when configured to be too large. If you hear about HBase GC configuration woes, they stem largely from this component. There is a single block cache per region server.
 
 ![](/images/regionserver.png)
 
