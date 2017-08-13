@@ -15,7 +15,7 @@ The **BlockCache is the portion of memory where HBase caches data read off of di
 RegionServers host multiple Regions.
 
 * A Region consists of **multiple “Stores.” \(Hstore\) \(MemStore\)**
-* **Each Store is corresponds to a column family from the logical model.** Remember that business of HBase being a column family oriented database? These Stores provide that physical isolation. 
+* **Each Store corresponds to a column family from the logical model.** Remember that business of HBase being a column family oriented database? These Stores provide that physical isolation. 
 * A Store consists of multiple StoreFiles plus a MemStore. Data resident on disk is managed by the StoreFiles and is maintained in the HFile format. The MemStore accumulates edits and once filled is flushed to disk, creating new HFiles.
 
 
