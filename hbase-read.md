@@ -12,8 +12,9 @@ For future reads, the client uses the cache to retrieve the META location and pr
 
 * As a general rule, if we need fast access to data, we should keep it ordered and as much of it as possible in memory.
 
-* HBase accomplishes both of these goals, allowing it to serve millisecond reads in most cases. 
-  A read against HBase must be reconciled between the persisted HFiles and the data still in the MemStore. HBase has an LRU cache for reads. This cache, also called BlockCache , remains in the JVM heap along with MemStore.
+* HBase accomplishes both of these goals, allowing it to serve millisecond reads in most cases.   
+  A read against HBase must be reconciled between the persisted HFiles and the data still in the MemStore. HBase has an LRU cache for reads. This cache, also called** BlockCache , remains in the JVM heap along with MemStore.**
+
 * The BlockCache is designed to keep frequently accessed data from the HFiles in memory so as to avoid disk reads as much as possible. Each column family has its own BlockCache.
    Understanding the BlockCache is an important part of understanding how to run HBase at optimal performance. 
   The "Block" in BlockCache is the unit of data that HBase reads from disk in a single pass.

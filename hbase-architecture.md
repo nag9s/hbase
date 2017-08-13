@@ -8,3 +8,7 @@ HBase is composed of three types of servers in a master slave type of architectu
 
 
 
+# Hbase Table Objects![](/assets/Hbase Table Objects.png)
+
+
+
