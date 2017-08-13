@@ -19,6 +19,7 @@
   * [Read Load Balancing](hbase-architecture/read-load-balancing.md)
   * [HBase Minor Compaction](hbase-architecture/hbase-minor-compaction.md)
   * [HBase Major Compaction](hbase-architecture/hbase-major-compaction.md)
+  * [HBase Read Merge](hbase-architecture/hbase-read-merge.md)
 * [Queries](queries.md)
 * [HBase Shell](hbase-shell.md)
   * [Guide Lines](hbase-shell/guide-lines.md)
