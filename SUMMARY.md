@@ -15,4 +15,5 @@
   * [Fault Tolerance](hbase-architecture/fault-tolerance.md)
   * Data Locality
 * [Queries](queries.md)
+* [HBase Shell](hbase-shell.md)
 
