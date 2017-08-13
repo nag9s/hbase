@@ -11,11 +11,11 @@
     * [WAL\(HLog\)](hbase-architecture/region-servers/hlog.md)
     * [How the Components Work Together](hbase-architecture/region-servers/how-the-components-work-together.md)
     * [BlockCache](hbase-architecture/region-servers/blockcache.md)
+    * [Data Locality](hbase-architecture/data-locality.md)
+    * [Region Split](hbase-architecture/region-servers/region-split.md)
     * [Store\(HStore OR Memstore\)\)](hbase-architecture/region-servers/storehstore-or-memstore.md)
   * [Special Tables ROOT , META](hbase-architecture/special-tables-root-meta.md)
   * [Fault Tolerance](hbase-architecture/fault-tolerance.md)
-  * Data Locality
-  * Region Split
 * [Queries](queries.md)
 * [HBase Shell](hbase-shell.md)
   * [Guide Lines](hbase-shell/guide-lines.md)
