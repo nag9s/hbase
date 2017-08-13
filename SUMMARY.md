@@ -16,4 +16,5 @@
   * Data Locality
 * [Queries](queries.md)
 * [HBase Shell](hbase-shell.md)
+  * [Guide Lines](hbase-shell/guide-lines.md)
 
