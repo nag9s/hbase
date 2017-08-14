@@ -17,3 +17,11 @@ The basic unit of scalability and load balancing in HBase is called a region. Th
 
 
 
+
+
+
+
+Table is divided into regions 
+
+![](/assets/regionserver.png)
+
