@@ -41,9 +41,5 @@ Given that the underlying data is stored in HDFS, which is available to all clie
 
 #### When a region is assigned to a RegionServer, how does my client application \(the one doing reads and writes\) know its location?
 
-Two special tables in HBase, -ROOT-\( this is deprecated later in hbase 0.16, but the functionality remains same\) and .META., help find where regions for various tables are hosted. Like all tables in HBase, -ROOT- and .META. are also split into regions. -ROOT- and .META. are both special tables, but -ROOT- is more special than
-
-.META.; -ROOT- never splits into more than one region. .META. behaves like all other
-
-tables and can split into as many regions as required.
+Two special tables in HBase, -ROOT-\( this is deprecated since hbase 0.96, but the functionality remains same\) and .META., help find where regions for various tables are hosted. Like all tables in HBase, -ROOT- and .META. are also split into regions. -ROOT- and .META. are both special tables, but -ROOT- is more special than .META.; -ROOT- never splits into more than one region. .META. behaves like all other tables and can split into as many regions as required.
 
