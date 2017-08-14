@@ -29,11 +29,5 @@ A Region Server runs on an HDFS data node and has the following components:
 
 ![](/assets/import.png)
 
-
-
-RegionServers are typically collocated with HDFS DataNodes \(figure 3.7\) on the
-
-same physical hardware, although that’s not a requirement. The only requirement is
-
-that RegionServers should be able to access HDFS. They’re essentially clients and
+RegionServers are typically collocated with HDFS DataNodes  on the same physical hardware, although that’s not a requirement. The only requirement is that RegionServers should be able to access HDFS. They’re essentially clients and
 
