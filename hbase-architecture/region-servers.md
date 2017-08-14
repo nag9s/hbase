@@ -33,13 +33,21 @@ RegionServers are typically collocated with HDFS DataNodes  on the same physical
 
 ![](/assets/RegionServersDataNodes.png)
 
-
-
-
-
-Given that the underlying data is stored in HDFS, which is available to all clients as a single namespace, all RegionServers have access to the same persisted files in the file system and can therefore host any region . By physically collocating DataNodes and RegionServers, you can use the **data locality property**; that is, RegionServers can theoretically read and write to the local DataNode as the primary DataNode.
-
-
+Given that the underlying data is stored in HDFS, which is available to all clients as  
+ a single namespace, all RegionServers have access to the same persisted files in the file  
+ system and can therefore host any region . By physically collocating DataNodes and RegionServers, you can use the **data locality property**; that is, RegionServers can theoretically read and write to the local DataNode as the primary DataNode.
 
 ![](/assets/RegionSDataNodes.png)
+
+
+
+
+
+#### When a region is assigned to a RegionServer, how does my client application \(the one doing reads and writes\) know its location?
+
+
+
+
+
+
 
