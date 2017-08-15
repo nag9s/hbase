@@ -29,4 +29,5 @@
 * [HBase Write](hbase-write.md)
 * [Known Use Cases ](known-use-cases.md)
 * [HBase Data Model](hbase-data-model.md)
+* [References](references.md)
 
