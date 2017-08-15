@@ -4,9 +4,9 @@ How ROOT . META will be populated for the first time ? How they are involved in 
 
 Learning Hbase
 
-chapter 2  Reading  ,writing cycle
+**chapter 2  Reading  ,writing cycle**
 
-      Each column family might have many HFiles, but the HFile will only belong to a specific column family.  does this mean entire column family or the only few columns those got updates ?
+  Each column family might have many HFiles, but the HFile will only belong to a specific column family.  does this mean entire column family or the only few columns those got updates ?
 
 
 
