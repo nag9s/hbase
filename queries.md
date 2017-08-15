@@ -8,7 +8,5 @@ Book - Learning Hbase
 
 Each column family might have many HFiles, but the HFile will only belong to a specific column family.  does this mean entire column family or the only few columns those got updates ?
 
-
-
-Region assignment  - check once , it is not clear   - it was referring to a case if the region assignment is correct and valid  - why and what are the cases region assignment is incorrect and not  valid
+Region assignment  - check once , it is not clear   - it was referring to a case if the region assignment is correct and valid  - why and what are the cases region assignment is incorrect and not  valid  - take a look at regionserver failover section
 
