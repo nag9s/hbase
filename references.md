@@ -4,5 +4,5 @@ Learning Hbase
 
 Hbase In action
 
-Pro Apache Hbase 2nd Edition
+Pro Apache Hadoop 2nd Edition
 
