@@ -1,5 +1,7 @@
 HBase Premier - very nice book
 
+Hbase Definitive Guide - nice book
+
 Learning Hbase
 
 Hbase In action
