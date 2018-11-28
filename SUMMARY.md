@@ -32,4 +32,5 @@
 * [References](references.md)
 * [Hands on](hands-on.md)
 * [Case Studies](case-studies.md)
+* [Notes](notes.md)
 
