@@ -7,11 +7,12 @@ The mode the cluster will be in. Possible values are false for standalone mode a
 
 So if you set it to **true**y ou'll see the distinct master, region server and ZooKeeper processes.
 
-&lt;property&gt;
+```
+<property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
+```
 
-    &lt;name&gt;hbase.cluster.distributed&lt;/name&gt;
 
-    &lt;value&gt;true&lt;/value&gt;
-
-  &lt;/property&gt;
 
